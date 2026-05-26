@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lean Six Sigma Training & Certification | DATAIED Systems</title>
+  <meta name="description" content="Lean Six Sigma training and certification preparation by DATAIED Systems for students, professionals, and organizations." />
+
+  <style>
+    :root {
+      --primary: #0f3d3e;
+      --secondary: #1f7a5a;
+      --accent: #f4b41a;
+      --light: #f7f9f8;
+      --dark: #1c1c1c;
+      --muted: #666666;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .hero {
+      padding: 95px 8%;
+      background: linear-gradient(135deg, #0f3d3e 0%, #1f7a5a 100%);
+      color: var(--white);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3.1rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.12rem;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: var(--accent);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      background: #ffd45a;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--white);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      padding: 32px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .hero-card h3 {
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      color: var(--primary);
+      font-size: 2.25rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    .program {
+      background: var(--white);
+    }
+
+    .modules {
+      max-width: 950px;
+      margin: auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .module {
+      background: var(--light);
+      border-left: 6px solid var(--secondary);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .module strong {
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .cta {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.25rem;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+
+    .contact-box {
+      background: var(--white);
+      max-width: 760px;
+      margin: auto;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+    }
+
+    .contact-box p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #102526;
+      color: var(--white);
+      text-align: center;
+      padding: 26px 8%;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 75px 6%;
+      }
+
+      .hero h1 {
+        font-size: 2.35rem;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DATAIED Systems</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/services/">Services</a>
+      <a href="/training/">Training</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="badge">Lean Six Sigma Training & Certification</span>
+        <h1>Learn how to improve processes, reduce waste, and solve problems using Lean Six Sigma.</h1>
+        <p>
+          A practical training and certification preparation program under DATAIED Systems for students, professionals, and organizations who want to build capability in DMAIC, quality improvement, root cause analysis, and data-driven process improvement.
+        </p>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#inquiry">Enroll / Inquire Now</a>
+          <a class="btn btn-outline" href="#program">View Program Coverage</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Program Focus</h3>
+        <p><strong>Lean Six Sigma Yellow Belt / Foundation Level</strong></p>
+        <br />
+        <p>Designed for learners who want a structured introduction to Lean Six Sigma tools, improvement thinking, and project-based application.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>What You Will Learn</h2>
+        <p>This training focuses on practical tools that can be applied in academic projects, workplace improvement, operations, quality, and analytics-related roles.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Lean Thinking</h3>
+          <p>Identify waste, non-value adding activities, bottlenecks, and improvement opportunities in real processes.</p>
+        </div>
+        <div class="card">
+          <h3>DMAIC Methodology</h3>
+          <p>Understand the Define, Measure, Analyze, Improve, and Control cycle as a structured problem-solving framework.</p>
+        </div>
+        <div class="card">
+          <h3>Quality Tools</h3>
+          <p>Apply basic tools such as SIPOC, process maps, 5 Whys, fishbone diagram, Pareto analysis, and control planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="program">
+      <div class="section-title">
+        <h2>Program Coverage</h2>
+        <p>The course is organized into beginner-friendly modules with emphasis on application, not just theory.</p>
+      </div>
+
+      <div class="modules">
+        <div class="module"><strong>Module 1:</strong> Introduction to Lean Six Sigma and continuous improvement</div>
+        <div class="module"><strong>Module 2:</strong> Lean principles, waste identification, and value-added analysis</div>
+        <div class="module"><strong>Module 3:</strong> DMAIC framework and project improvement structure</div>
+        <div class="module"><strong>Module 4:</strong> Problem statement, goal statement, SIPOC, and process mapping</div>
+        <div class="module"><strong>Module 5:</strong> Root cause analysis using 5 Whys, fishbone diagram, and Pareto analysis</div>
+        <div class="module"><strong>Module 6:</strong> Measurement basics, performance indicators, and data-driven decision making</div>
+        <div class="module"><strong>Module 7:</strong> Improve and Control phase tools, sustainment planning, and certification preparation</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Who Should Join?</h2>
+        <p>This program is suitable for individuals and teams who want to improve process performance and strengthen professional capability.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Students</h3>
+          <p>Ideal for engineering, business, IT, analytics, and operations students preparing for internships, capstone projects, and professional roles.</p>
+        </div>
+        <div class="card">
+          <h3>Professionals</h3>
+          <p>Useful for employees involved in operations, quality, production, service delivery, data analytics, and process improvement work.</p>
+        </div>
+        <div class="card">
+          <h3>Organizations</h3>
+          <p>Designed for teams that want a common improvement language and a foundation for continuous improvement initiatives.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="program">
+      <div class="section-title">
+        <h2>Training Outcomes</h2>
+        <p>After completing the program, participants are expected to demonstrate foundation-level Lean Six Sigma competency.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Knowledge</h3>
+          <ul>
+            <li>Explain Lean Six Sigma concepts</li>
+            <li>Describe DMAIC phases</li>
+            <li>Recognize common quality tools</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Application</h3>
+          <ul>
+            <li>Map simple processes</li>
+            <li>Identify root causes</li>
+            <li>Recommend improvement actions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Certification Preparation</h3>
+          <ul>
+            <li>Review key Lean Six Sigma topics</li>
+            <li>Prepare for foundation-level assessment</li>
+            <li>Build confidence for certification pathways</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Start your Lean Six Sigma learning journey with DATAIED Systems.</h2>
+      <p>Develop practical improvement skills that can support academic projects, workplace productivity, quality improvement, and professional growth.</p>
+      <a class="btn btn-primary" href="#inquiry">Request Training Details</a>
+    </section>
+
+    <section id="inquiry">
+      <div class="section-title">
+        <h2>Enrollment & Training Inquiry</h2>
+        <p>Use this section for your official contact details or link to a Google Form enrollment page.</p>
+      </div>
+
+      <div class="contact-box">
+        <p><strong>Program:</strong> Lean Six Sigma Training & Certification Preparation</p>
+        <p><strong>Provider:</strong> DATAIED Systems</p>
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/edmar-beatingo-9a25601aa</p>
+        <p><strong>For inquiries:</strong> Send your name, school/organization, preferred schedule, and number of participants.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 DATAIED Systems. Lean Six Sigma • Analytics • Automation • Process Improvement</p>
+  </footer>
+</body>
+</html>
